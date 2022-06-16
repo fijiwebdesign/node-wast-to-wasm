@@ -7,7 +7,7 @@ The `lib/wast/libwat` is wat -> wasm compiler compiled to JS.
 ### Example: wast to wasm
 
 ```
-const wast2wasm = require('./lib/wast/wast2wasm');
+const { wast2wasm } = require('./lib/wast/wast2wasm');
 const fs = require('fs');
 
 const run = async () => {
