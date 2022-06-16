@@ -1,6 +1,6 @@
-const wast2wasm = require('./lib/wast/wast2wasm');
+const { wast2wasm } = require('../lib/wast/wast2wasm');
 const fs = require('fs/promises');
-const { wasmToJs } = require('./lib/wasm/wasm2js');
+const { wasmToJs } = require('../lib/wasm/wasm2js');
 
 const run = async () => {
   const text = `(module
